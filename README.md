@@ -47,3 +47,5 @@ or (per the licensee's choosing)
 under the terms of the GNU General Public License version 2 as published by the Free Software Foundation (see <a href=http://www.gnu.org/licenses/gpl-2.0.txt>http://www.gnu.org/licenses/gpl-2.0.txt</a>).
 
 The bundle fragment is licensed under the Eclipse Public License v1.0 as published by the Eclipse Foundation (see <a href="http://www.eclipse.org/legal/epl-v10.html">http://www.eclipse.org/legal/epl-v10.html</a>).
+
+Detailed information can be found in the about.html files located in each subfolder.
