@@ -13,7 +13,6 @@
  ******************************************************************************/
 package de.tuilmenau.ics.extensionpoint.simple;
 
-import java.lang.reflect.Constructor;
 import java.util.Arrays;
 
 import org.w3c.dom.NamedNodeMap;

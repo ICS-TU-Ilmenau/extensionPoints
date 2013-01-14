@@ -152,20 +152,26 @@ public class XMLExtensionRegistry extends ExtensionRegistry
 	private InputStream getFileFromJar(String jarFilename, String entryFilename) throws IOException
 	{
 		JarFile jarfile = new JarFile(jarFilename);
-		Enumeration<JarEntry> entries = jarfile.entries();
-		if(entries != null) {
-			while(entries.hasMoreElements()) {
-				JarEntry entry = entries.nextElement();
-				
-				if(!entry.isDirectory()) {
-					if(entry.getName().equals(entryFilename)) {
-						return jarfile.getInputStream(entry);
+		
+		try {
+			Enumeration<JarEntry> entries = jarfile.entries();
+			if(entries != null) {
+				while(entries.hasMoreElements()) {
+					JarEntry entry = entries.nextElement();
+					
+					if(!entry.isDirectory()) {
+						if(entry.getName().equals(entryFilename)) {
+							return jarfile.getInputStream(entry);
+						}
 					}
 				}
 			}
+			
+			return null;
 		}
-		
-		return null;
+		finally {
+			jarfile.close();
+		}
 	}
 	
 	/**
