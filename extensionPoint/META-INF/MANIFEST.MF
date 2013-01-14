@@ -5,8 +5,7 @@ Bundle-SymbolicName: de.tuilmenau.ics.extensionpoint;singleton:=true
 Bundle-Version: 1.0.2.qualifier
 Bundle-Vendor: ICS group of TU Ilmenau
 Bundle-License: Dual-license EPL and GPL 2 (details see about.html)
-Bundle-ClassPath: .,
- config.properties
+Bundle-ClassPath: .
 Export-Package: de.tuilmenau.ics.extensionpoint
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 DynamicImport-Package: *
